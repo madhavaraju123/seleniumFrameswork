@@ -38,9 +38,9 @@ public class SafexpressEPaymentPage extends MainTest_UAT {
 //		UtilityClass.implicitelyWaitForAComponent(2000);
 		UtilityClass.waitForElement("//input[@id='gst_in_rs']");
 		UtilityClass.fn_sendkeys("//input[@id='gst_in_rs']", "1");
-		UtilityClass.implicitelyWaitForAComponent(8000);
-		UtilityClass.waitForElement("//input[@id='na_mobile']");
-		UtilityClass.fn_sendkeys("//input[@id='na_mobile']", "6123408642");
+		UtilityClass.implicitelyWaitForAComponent(10000);
+//		UtilityClass.waitForElement("//input[@id='na_mobile']");
+		UtilityClass.fn_sendkeys("//input[@id='na_mobile']", "9188702287");
 		UtilityClass.waitForElement("//button[@class='btn btn-default verify-button ng-star-inserted']");
 //		UtilityClass.waitForElement("//button[@class='btn col-md-2 paynow-button ng-star-inserted']");
 //		UtilityClass.fn_Click("//button[@class='btn col-md-2 paynow-button ng-star-inserted']");

@@ -3,7 +3,6 @@
 	<groupId>MDM_Safexpress_Project</groupId>
 	<artifactId>MDM_Safexpress_Project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -31,7 +30,6 @@
 			<artifactId>ashot</artifactId>
 			<version>1.4.5</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -92,7 +90,7 @@
 			<version>5.2.3</version>
 		</dependency>
 	</dependencies>
-	<profiles>
+	<!-- 	<profiles>
 		<profile>
 			<id>Regression</id>
 			<build>
@@ -150,5 +148,21 @@
 				</pluginManagement>
 			</build>
 		</profile>
-	</profiles>
+	</profiles>-->
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M8</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng_UAT.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>
