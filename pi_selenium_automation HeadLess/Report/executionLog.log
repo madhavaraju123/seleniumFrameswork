@@ -1,0 +1,7 @@
+2023-01-30 12:46:58 INFO  UtilityClass:98 - in beforetest
+2023-01-30 12:46:58 INFO  MainTest_UAT:53 - URL Launch
+2023-01-30 12:47:02 INFO  UtilityClass:170 - webdriver initialised
+2023-01-30 14:21:47 INFO  MainTest_UAT:59 - after method
+2023-01-30 12:47:35 INFO  MainTest_UAT:53 - URL Launch
+2023-01-30 12:47:37 INFO  UtilityClass:170 - webdriver initialised
+2023-01-30 14:11:39 INFO  MainTest_UAT:58 - after method

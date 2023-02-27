@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sample]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="CH"/>
+  <parameter name="url" value="https://propeli-uat.sfxapps.com/login"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.safex.MDM.automation.LaunchFFDemo">
+        <methods>
+          <include name="launchUrl"/>
+        </methods>
+      </class> <!-- com.safex.MDM.automation.LaunchFFDemo -->
+      <class name="com.safex.MDM.automation.CrossBrowserDemo">
+        <methods>
+          <include name="ClosingChrome"/>
+          <include name="testParameterWithXML"/>
+        </methods>
+      </class> <!-- com.safex.MDM.automation.CrossBrowserDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Sample] -->
