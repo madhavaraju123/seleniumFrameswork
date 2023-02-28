@@ -161,8 +161,8 @@ public class UtilityClass {
 		if (browser!=null) {
 			if (browser.contains("chrome")) {
 				
-//					WebDriverManager.chromedriver().setup();
-				     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+					WebDriverManager.chromedriver().setup();
+//				     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
 					ChromeOptions chromeOptions = new ChromeOptions();
 					chromeOptions.addArguments("headless");
 					chromeOptions.addArguments("--window-size=1920,1080");
@@ -179,7 +179,8 @@ public class UtilityClass {
 //					
 //	            options.addArguments("--window-size=1400,600");
 			}else if (browser.contains("firefox")) {
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\drivers\\geckodriver.exe");
+				WebDriverManager.firefoxdriver().setup();
+//				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\drivers\\geckodriver.exe");
 				FirefoxOptions firefoxOption = new FirefoxOptions();
 				firefoxOption.addArguments("--headless");
 				firefoxOption.addArguments("--window-size=1920,1080");
@@ -187,7 +188,8 @@ public class UtilityClass {
 				driver = new FirefoxDriver(firefoxOption);
 				
 			}else if (browser.contains("edge")) {
-				System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"\\drivers\\msedgedriver.exe");
+				WebDriverManager.edgedriver().setup();
+//				System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"\\drivers\\msedgedriver.exe");
 				EdgeOptions edgeOption = new EdgeOptions();
 				edgeOption.addArguments("--headless");
 				edgeOption.addArguments("--window-size=1920,1080");

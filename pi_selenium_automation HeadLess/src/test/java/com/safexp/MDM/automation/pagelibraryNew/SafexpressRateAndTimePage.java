@@ -27,22 +27,25 @@ public class SafexpressRateAndTimePage extends MainTest_UAT {
 	public void clickLogoAndRateAndTime_icon() throws InterruptedException {
 		UtilityClass.fn_Click("//img[@class='company-logo']");
 		UtilityClass.fn_Click("//section[contains(@style,'display')]//descendant::p[contains(text(),'Rate & Time')]");
-		
+		UtilityClass.waitForElement("//input[@placeholder='Source City']");
 		UtilityClass.fn_scrolldown("window.scrollBy(0,200)");
 //		UtilityClass.implicitelyWaitForAComponent(5000);
 	}
 	@Test(priority=1)
 	public void rateAndTimeGetdtailsAndGetRate() {
 		UtilityClass.fn_Input("//input[@placeholder='Source City']","PRODDATUR");
-//		UtilityClass.implicitelyWaitForAComponent(6000);
+		UtilityClass.implicitelyWaitForAComponent(6000);
+		UtilityClass.waitForElement("//div/child::div[@class='ng-star-inserted']");
 		UtilityClass.fn_list("//div/child::div[@class='ng-star-inserted']", "PRODDATUR");
 	//	driver.findElement(By.xpath("//input[@placeholder='Source City']")).sendKeys("PRODDATUR");
 //		UtilityClass.implicitelyWaitForAComponent(5000);
 		UtilityClass.fn_Input("//input[@placeholder='Destination City']", "cuddapah");
 //		UtilityClass.implicitelyWaitForAComponent(8000);
+		UtilityClass.waitForElement("//div/child::div[@class='ng-star-inserted']");
 		UtilityClass.fn_list("//div/child::div[@class='ng-star-inserted']", "cuddapah");
 //		UtilityClass.implicitelyWaitForAComponent(5000);
 		UtilityClass.fn_Click("//button[text()='Get Details']");
+		
 		UtilityClass.waitForElement("//button[text()='Get Rate']");
 	//	UtilityClass.implicitelyWaitForAComponent(8000);
 		UtilityClass.fn_Click("//button[text()='Get Rate']");
