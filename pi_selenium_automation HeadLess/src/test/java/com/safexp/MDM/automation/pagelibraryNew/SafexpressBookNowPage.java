@@ -38,7 +38,7 @@ public class SafexpressBookNowPage extends MainTest_UAT {
 		UtilityClass.fn_sendkeys("//input[@placeholder='Destination Pincode']", "500016");
 		UtilityClass.fn_tab("//input[@placeholder='Destination Pincode']");
 		UtilityClass.waitForElement("//label[text()='Destination Pincode']/../following-sibling::span");
-		UtilityClass.fn_datepicker("27-feb-2023", "//span[@class='mat-button-wrapper']",
+		UtilityClass.fn_datepicker("30-mar-2023", "//span[@class='mat-button-wrapper']",
 				"//div[@aria-modal='true']/descendant::span[@class='mat-button-wrapper']/span",
 				 "//tbody/descendant::td/descendant::div[contains(@class,'mat-calendar-body-cell-content')]",
 				 "//tbody[@class='mat-calendar-body']/descendant::div[contains(@class,'mat-calendar-body-cell-content')]",

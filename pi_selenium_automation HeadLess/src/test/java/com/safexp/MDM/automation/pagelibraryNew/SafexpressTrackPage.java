@@ -38,8 +38,8 @@ public class SafexpressTrackPage extends MainTest_UAT{
 		UtilityClass.fn_Click("//div/ancestor::form[not(contains(@class,'formob'))]/descendant::div[@class='form-group col-md-6']/following-sibling::button");
 	//	UtilityClass.fn_scrolldown("window.scrollBy(0,100)");
 //		UtilityClass.implicitelyWaitForAComponent(3000);
-		UtilityClass.waitForElement("//div/descendant::div[text()='X']");
-	    UtilityClass.fn_Click("//div/descendant::div[text()='X']");
+		UtilityClass.waitForElement("//span/b[text()='X']");
+	    UtilityClass.fn_Click("//span/b[text()='X']");
 		
 	   // UtilityClass.fn_scrolldown("window.scrollBy(0,10)");
 	    

@@ -33,6 +33,7 @@ public class SafexpressRateAndTimePage extends MainTest_UAT {
 	}
 	@Test(priority=1)
 	public void rateAndTimeGetdtailsAndGetRate() {
+		UtilityClass.implicitelyWaitForAComponent(6000);
 		UtilityClass.fn_Input("//input[@placeholder='Source City']","PRODDATUR");
 		UtilityClass.implicitelyWaitForAComponent(6000);
 		UtilityClass.waitForElement("//div/child::div[@class='ng-star-inserted']");

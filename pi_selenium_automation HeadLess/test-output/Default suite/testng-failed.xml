@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.safexp.MDM.automation.pagelibraryNew.SafexpressTrackPage">
+      <class name="com.safexp.MDM.automation.pagelibraryNew.SafexpressBookNowPage">
         <methods>
-          <include name="trackInvoiceInfo"/>
-          <include name="clickLogoAndTrackaIcon"/>
-          <include name="trackWaybillInfo"/>
-          <include name="trackEwaybillInfo"/>
+          <include name="bookNow"/>
           <include name="closeOpenWindow"/>
           <include name="appLaunch"/>
         </methods>
-      </class> <!-- com.safexp.MDM.automation.pagelibraryNew.SafexpressTrackPage -->
+      </class> <!-- com.safexp.MDM.automation.pagelibraryNew.SafexpressBookNowPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
